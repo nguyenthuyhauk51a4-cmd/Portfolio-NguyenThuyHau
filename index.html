@@ -343,10 +343,10 @@ footer h2:after{margin-top:12px}
 var G=[
 {t:"Đào tạo lái xe",p:"TikTok @daotaolaixe06",l:"https://www.tiktok.com/@daotaolaixe06",
  r:["Viết kịch bản","Hỗ trợ quay","Chỉnh sửa video","Lên lịch đăng bài","Setup và tìm điểm quay"],
- c:[["211.3K","Biển báo BRT trên đường","https://www.tiktok.com/@daotaolaixe06/video/7590767665325804821?is_from_webapp=1&sender_device=pc"],
-    ["149.4K","Nhận biết biển báo khi lái xe","https://www.tiktok.com/@daotaolaixe06/video/7584433870318095637?is_from_webapp=1&sender_device=pc"],
-    ["48.4K","Biển báo cảnh báo trên phố","https://www.tiktok.com/@daotaolaixe06/video/7587772184400055572?is_from_webapp=1&sender_device=pc"],
-    ["16.5K","Video tình huống ngoài đường","https://www.tiktok.com/@daotaolaixe06/video/7551368181164641543?is_from_webapp=1&sender_device=pc"]]},
+ c:[["211.3K","Biển báo BRT trên đường","https://www.tiktok.com/@daotaolaixe06/video/7590767665325804821?is_from_webapp=1&sender_device=pc","","https://www.tiktok.com/@daotaolaixe06/video/7581462034521378069"],
+    ["149.4K","Nhận biết biển báo khi lái xe","https://www.tiktok.com/@daotaolaixe06/video/7584433870318095637?is_from_webapp=1&sender_device=pc","","https://www.tiktok.com/@daotaolaixe06/video/7584433870318095637"],
+    ["48.4K","Biển báo cảnh báo trên phố","https://www.tiktok.com/@daotaolaixe06/video/7587772184400055572?is_from_webapp=1&sender_device=pc","","https://www.tiktok.com/@daotaolaixe06/video/7590767665325804821"],
+    ["16.5K","Video tình huống ngoài đường","https://www.tiktok.com/@daotaolaixe06/video/7551368181164641543?is_from_webapp=1&sender_device=pc","","https://www.tiktok.com/@daotaolaixe06/video/7562184292030369044"]]},
 {t:"Kênh TikTok bằng video AI",p:"TikTok @hm.v.v.t228",l:"https://www.tiktok.com/@hm.v.v.t228",
  r:["Viết content","Tạo video bằng AI","Chỉnh sửa video","Lên lịch đăng bài","Trực tiếp quản lý và vận hành kênh"],
  c:[["48.1K","Video AI: măng cụt xanh gọt sẵn","https://www.tiktok.com/@hm.v.v.t228","","ai1"],
@@ -369,7 +369,7 @@ G.forEach(function(g){
  out+='<ul class="roles">'+g.r.map(function(x){return '<li>'+x+'</li>'}).join("")+'</ul><div class="vgrid">';
  g.c.forEach(function(c){
   var im=IM[c[4]]||IM[c[2]],f=c[3];
-  out+='<a class="vc'+(f?' feat':'')+'" href="'+c[2]+'" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer"><div class="th">'+(im?'<img loading="lazy" src="'+im+'" alt="'+c[1]+'">':'<div class="ph"><i>▶</i>Video AI<br>sức khỏe</div>')+(f?'':'<div class="bd">'+c[0]+'<small>lượt xem</small></div>')+'</div><div class="tx">'+(f?'<span>'+c[0]+' lượt xem</span>':'')+c[1]+(f?'<em>Bấm để xem video gốc</em>':'')+'</div></a>';
+  out+='<a class="vc'+(f?' feat':'')+'" href="'+c[2]+'" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer"><div class="th">'+(im?'<img loading="lazy" src="'+im+'" alt="'+c[1]+'">':'<div class="ph"><i>▶</i>Xem video</div>')+(f?'':'<div class="bd">'+c[0]+'<small>lượt xem</small></div>')+'</div><div class="tx">'+(f?'<span>'+c[0]+' lượt xem</span>':'')+c[1]+(f?'<em>Bấm để xem video gốc</em>':'')+'</div></a>';
  });
  out+='</div>';
  if(g.h){out+='<div class="how">'+g.h.map(function(h){return '<div><b>'+h[0]+'</b><span>'+h[1]+'</span></div>'}).join("")+'</div>'}
